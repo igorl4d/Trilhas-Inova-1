@@ -1,0 +1,559 @@
+html,
+body {
+  height: 100%;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100%;
+}
+.container-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: top 0.5s ease-in-out;
+}
+
+.titulo-sect {
+  color: white;
+  font-family: oswald, sans-serif;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.inicial-sect {
+  background-image: url('assets/Group-2.png');
+  background-size: 100% 100%;
+}
+
+.header-borda {
+  width: 85%;
+  padding: 1em;
+  padding-top: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-header > ul {
+  display: flex;
+  list-style: none;
+  gap: 3em;
+}
+
+.nav-header > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+}
+
+.nav-select::after {
+  position: fixed;
+  content: 'PÁGINA INICIAL';
+  color: transparent;
+  font-size: 18px;
+  font-family: Oswald, sans-serif;
+  padding-bottom: 1em;
+  border-bottom: solid 1px red;
+  margin-left: -102px;
+  margin-top: -2px;
+}
+
+.nav-select2::after {
+  position: fixed;
+  content: 'SOBRE O ESTADO';
+  color: transparent;
+  font-size: 18px;
+  font-family: Oswald, sans-serif;
+  padding-bottom: 1em;
+  border-bottom: solid 1px red;
+  margin-left: -114px;
+  margin-top: -2px;
+}
+
+.nav-select3::after {
+  position: fixed;
+  content: 'artigos';
+  color: transparent;
+  font-size: 18px;
+  font-family: Oswald, sans-serif;
+  padding-bottom: 1em;
+  border-bottom: solid 1px red;
+  margin-left: -55px;
+  margin-top: -2px;
+}
+
+.nav-select4::after {
+  position: fixed;
+  content: 'PASSEIOS';
+  color: transparent;
+  font-size: 18px;
+  font-family: Oswald, sans-serif;
+  padding-bottom: 1em;
+  border-bottom: solid 1px red;
+  margin-left: -63px;
+  margin-top: -2px;
+}
+
+.nav-select5::after {
+  position: fixed;
+  content: 'CONTATOOO';
+  color: transparent;
+  font-size: 18px;
+  font-family: Oswald, sans-serif;
+  padding-bottom: 1em;
+  border-bottom: solid 1px red;
+  margin-left: -63px;
+  margin-top: -2px;
+}
+
+.imagem-hero {
+  background-repeat: no-repeat;
+  height: 110vh;
+  background-size: 100% 100%;
+  background-image: url('Group-2.png');
+}
+
+.container-central-hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container-central-hero .texto-central-hero > h1 {
+  font-family: Oswald, sans-serif;
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.container-central-hero > .texto-central-hero > p {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: Medium;
+  text-align: justify;
+  color: white;
+  width: 96%;
+}
+
+.texto-central-hero {
+  width: 482px;
+  position: relative;
+  margin-left: 62px;
+}
+
+.container-sobre {
+  display: flex;
+  width: 90%;
+  margin: 3em auto;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.scroll-sobre {
+  position: relative;
+  top: 25px;
+  border: solid 2px black;
+}
+
+.bandeira-sobre {
+  width: 500px;
+  transform: rotate(20deg);
+  margin-left: -100px;
+  margin-top: 105px;
+}
+
+.texto-sobre {
+  color: white;
+  width: 60%;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.butao-sobre {
+  padding: 1em 2em;
+  width: 100%;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  font-family: Oswald, sans-serif;
+  margin-top: 2em;
+}
+
+.butao-sobre:hover {
+  background-color: #900000;
+}
+
+.transicao-azul {
+  width: 100%;
+  height: 10%;
+  background: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(
+    rgba(0, 0, 0, 1) 4%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    rgba(0, 0, 0, 1) 4%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: -o-linear-gradient(rgba(0, 0, 0, 1) 4%, rgba(11, 5, 35, 1) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 1) 4%, rgba(11, 5, 35, 1) 100%);
+  position: absolute;
+}
+
+.artigos-sect {
+  background-color: #0b0523;
+}
+
+.wrap-artigos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.butao-artigos {
+  padding: 1em 2em;
+  width: 100%;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  font-family: Oswald, sans-serif;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.butao-artigos:hover {
+  background-color: #900000;
+}
+
+.container-artigos {
+  display: flex;
+  background: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: -o-linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: linear-gradient(
+    317deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  font-family: oswald, sans-serif;
+  color: white;
+  opacity: 0.8;
+}
+
+.container-artigos > img {
+  width: 500px;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  max-width: 500px;
+}
+
+.texto-artigos {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.texto-artigos > h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.container-3-pontos {
+  width: 10%;
+  display: flex;
+  margin-bottom: -1em;
+  margin-top: 1em;
+  justify-content: space-between;
+}
+
+.pontinho {
+  margin-top: 1em;
+  width: 12px;
+  height: 12px;
+  background-color: #b6b6b6;
+  border: none;
+  border-radius: 50%;
+}
+
+.pontinho:hover {
+  background-color: red;
+}
+.selecionado {
+  background-color: red;
+}
+
+.transicao-preto {
+  background: rgb(11, 5, 35);
+  background: -webkit-linear-gradient(
+    rgba(11, 5, 35, 1) 49%,
+    rgba(0, 0, 0, 1) 97%
+  );
+  background: -moz-linear-gradient(
+    rgba(11, 5, 35, 1) 49%,
+    rgba(0, 0, 0, 1) 97%
+  );
+  background: -o-linear-gradient(rgba(11, 5, 35, 1) 49%, rgba(0, 0, 0, 1) 97%);
+  background: linear-gradient(rgba(11, 5, 35, 1) 49%, rgba(0, 0, 0, 1) 97%);
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+
+.wrap-passeios {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-passeios {
+  margin: 0em auto;
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+}
+
+.item-passeio {
+  width: 30%;
+  background: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  background: -o-linear-gradient(
+    227deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 5, 35, 1) 100%
+  );
+  border-radius: 20px 20px 20px 20px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.item-passeio:hover {
+  background-size: 150%;
+  box-shadow: 10px 10px rgba(11, 5, 35, 1);
+}
+.foto-item-passeio {
+  width: 100%;
+  height: 40%;
+  border-radius: 20px 20px 0 0;
+}
+
+.texto-item-passeio {
+  color: white;
+  font-family: Oswald, sans-serif;
+  text-align: justify;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.texto-item-passeio > h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.texto-item-passeio > button {
+  background-color: red;
+  padding: 1em;
+  width: 30%;
+  margin: 0 auto;
+  border: none;
+  color: white;
+  font-family: oswald, sans-serif;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.texto-item-passeio > button:hover {
+  background-color: #900000;
+}
+
+.texto-item-passeio > button > a {
+  text-decoration: none;
+  padding: 1em 0;
+  color: white;
+}
+
+.texto-item-passeio > span {
+  height: 20%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contato-sect {
+  height: 80%;
+  background-image: url('/assets/Group\ 4.png');
+  background-size: cover;
+}
+
+.wrap-contato {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.container-contato {
+  font-family: oswald, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  width: 100%;
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-contato > div > h2 {
+  font-size: 50px;
+}
+
+.container-contato > div > p {
+  font-size: 20px;
+}
+
+.container-contato > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-end;
+}
+
+.butao-submit {
+  width: 33%;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 1em;
+  font-family: oswald, sans-serif;
+  transition: 0.4s;
+}
+
+.butao-submit:hover {
+  color: rgb(255, 23, 23);
+}
+.container-contato > form > textarea {
+  resize: none;
+  background-color: white;
+  border: solid 1px rgb(0, 0, 0);
+  box-sizing: bordex-box;
+  opacity: 0.8;
+  padding: 1em;
+  font-family: oswald, sans-serif;
+}
+.container-contato > form > .text {
+  border: solid 1px rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  box-sizing: bordex-box;
+  font-family: oswald, sans-serif;
+  opacity: 0.8;
+}
+
+footer {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+.container-footer {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.container-footer > span {
+  background-color: rgb(255, 255, 255);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.butao-enviar {
+  color: rgb(0, 0, 0);
+}
+.container-footer > span > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+
+.container-footer > span > a:hover {
+  color: rgb(255, 0, 0);
+}
+
+footer > p {
+  font-family: oswald, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 1.5em;
+  margin-bottom: -1em;
+}

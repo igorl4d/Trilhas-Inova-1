@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maranhão</title>
+  </head>
+  <body>
+    
+    <header class = 'container-header' id = 'header'>
+      <div class="header-borda">
+      <nav class="nav-header">
+        <ul>
+          <li id = "inicial" class = "nav-select" ><a href="javascript:void(0);" onclick = 'goInicial()'>PÁGINA INICIAL</a></li>
+          <li id = "sobre"><a href = "javascript:void(0);" onclick = 'goSobre()'>SOBRE O ESTADO</a></li>
+          <li id = "artigos"><a href = "javascript:void(0);" onclick = 'goartigos()'>ARTIGOS</a></li>
+          <li id = "passeios"><a href = "javascript:void(0);" onclick = 'goPasseios()'>PASSEIOS</a></li>
+          <li id = "contato"><a href = "javascript:void(0);" onclick = 'goContato()'>CONTATO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+    
+    <section class = 'inicial-sect'>
+
+        <div class="container-central-hero">
+
+        <div class="texto-central-hero">
+          <h1>MARANHÃO</h1>
+          <p>
+            Um estado que merece ser visitado e vivenciado por todos aqueles que
+            apreciam uma boa dose de história, cultura e arte, ao lado de uma
+            natureza exuberante. <br />Maranhão, a terra de encantos!
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class = "sobre-sect" id= "teste">
+
+      <section class = 'sobre-sect' alt = 'Seção sobre o estado'>
+
+      <div class = 'scroll-sobre'></div>
+      <div class = 'container-sobre'>
+        <div>
+          <img src = 'assets/bandeira-ma.png' class = 'bandeira-sobre' alt = 'Bandeira do estado maranhão asteada balançando ao vento'>
+        </div>
+
+      <div class = 'texto-sobre'>
+        <h2 class = 'titulo-sect'>SOBRE O ESTADO</h2>
+        <p>A origem do Maranhão tem por base a luta entre povos, a luta pelo território. No ano do descobrimento do Brasil, os espanhóis foram os primeiros europeus a chegarem à região onde hoje se encontra o Maranhão. Somente trinta e cinco anos depois, que os portugueses tentaram ocupar o território, sem êxito.E a partir disso, em 1612, os franceses ocuparam definitivamente o Maranhão, originando a França Equinocial. A ocupação foi num cenário de lutas e tréguas entre portugueses e franceses durante três anos e, no ano de 1615, os franceses retomaram definitivamente a colônia.Com o objetivo de melhorar as defesas da costa e os contatos com a metrópole, instituiu-se em 1621 o Estado do Maranhão e Grão-Pará. Isto, porque as relações com a capital da colônia, Salvador, localizada na costa leste do oceano Atlântico eram dificultadas, devido às correntes marítimas.A separação do Maranhão e Pará ocorreu em 1774, após a consolidação do domínio português na região. A forte influência portuguesa no Maranhão fez com que o Estado só aceitasse em 1823, após intervenção armada, a independência do Brasil de Portugal, ocorrida em 7 de setembro de 1822. A área de casarões históricos de São Luís ocupa 250 hectares e envolve três mil e quinhentas construções. A beleza e a importância histórica deste acervo arquitetônico foram reconhecidas em 1997, durante o primeiro mandato da governadora Roseana, pela Organização das Nações Unidas para a Educação e Cultura (UNESCO), que concedeu à cidade o título de Patrimônio Cultural da Humanidade.</p>
+        <a href = 'https://www.portalsaofrancisco.com.br/turismo/maranhao'><button class = 'butao-sobre'>Saiba Mais</button></a>
+      </div>
+      </div>
+
+    </section>
+    <section class = 'artigos-sect'>
+      <div class = 'transicao-azul'></div>
+
+      <div class = 'wrap-artigos'>
+      <h2 class = 'titulo-sect' style = 'opacity: 0'>artigos</h2>
+      <div class = "container-artigos">
+        <div class = 'texto-artigos'>
+          <h2 id = "titulo-artigos">CULINÁRIA MARANHENSE</h2>
+          <p id = "texto-artigos">Que tal conhecer mais um pouco sobre a deliciosa culinária maranhense? Com muita tradição e iguarias, a culinária maranhense é uma das mais consagradas culinárias brasileiras, representando bem a região nordestina e todo o Brasil!. Desde o Arroz de cuchá à peixada Maranhense a nossa culinária é incrivél e vai te surpreender! </p>
+          <a id = "link-artigos" href = "https://blog.tudogostoso.com.br/materia/culinaria-maranhense/"><button class = 'butao-artigos'>Saiba Mais</button></a>
+        </div>
+
+          <img id = "imagem-artigos" src = "assets/culinaria.jpg" alt = 'Imagem de camarões em uma cesta trançada.'>
+          <img src = "assets/bumba-boi.jpg" style = 'display:none'>
+          <img src = "assets/reggae.jpg" style = 'display:none'>
+      </div>
+
+      <div class = 'container-3-pontos'>
+        <button id ='ponto1' class = 'pontinho selecionado' onclick = 'funcPonto1()'></button>
+        <button id = 'ponto2' class = 'pontinho' onclick = 'funcPonto2()'></button>
+        <button id = 'ponto3' class = 'pontinho' onclick = 'funcPonto3()'></button>
+      </div>
+
+      </div>
+    </section>
+
+    <section class = 'passeios-sect'>
+    <div class = 'transicao-preto'>
+    </div>
+    <div class = 'wrap-passeios'>
+
+    <h2 class = 'titulo-sect' style = 'margin-bottom:-2em;opacity:0'>PASSEIOS</h2>
+    <ul class = 'list-passeios'>
+      <li class = 'item-passeio'>
+        <img class = 'foto-item-passeio' src = 'assets/duna.jpg'>
+        <div class = 'texto-item-passeio'>
+          <span></h2>Lençois Maranhenses</h2></span>
+          <div class = 'wrap-passeio'><p>O Parque Nacional dos Lençóis Maranhenses (PNLM) foi criado em junho de 1981. Sua área é de 155 mil hectares, dos quais 90 mil são constituídos de dunas livres e lagoas interdunares, e abrange três municípios maranhenses: Barreirinhas, Santo Amaro e Primeira Cruz.</p></div>
+          <button><a href = 'https://www.icmbio.gov.br/parnalencoismaranhenses/'>Saiba Mais</a></button>
+        </div>
+      </li>
+
+      <li class = 'item-passeio'>
+        <img class = 'foto-item-passeio' src = 'assets/carolina.jpg'>
+        <div class = 'texto-item-passeio'>
+          <span></h2>Carolina</h2></span>
+          <div class = 'wrap-passeio'><p>O nome da cidade foi em homenagem à imperatriz Carolina Leopoldina, esposa de D. Pedro I. Hoje, Carolina é uma cidade eco turística com grande fluxo de turistas entre junho e setembro. Conheça um dos principais pontos turísticos da cidade de Carolina: Cachoeiras da Pedra Caída</p></div>
+          <button><a href = 'https://www.guiadoturismobrasil.com/cidade/MA/414/carolina'>Saiba Mais</a></button>
+        </div>
+      </li>
+
+      <li class = 'item-passeio'>
+        <img class = 'foto-item-passeio' src = 'assets/porta.jpg'>
+        <div class = 'texto-item-passeio'>
+          <span></h2>Centro Historíco</h2></span>
+          <div class = 'wrap-passeio'><p>O centro histórico de São Luís, localizado na ilha de São Luís do Maranhão, na baía de São Marcos, é um exemplo excepcional de cidade colonial portuguesa adaptada às condições climáticas da América do Sul equatorial, e que tem conservado o tecido urbano harmoniosamente integrado ao ambiente que o cerca.</p></div>
+          <button><a href = 'http://portal.iphan.gov.br/pagina/detalhes/34'>Saiba Mais</a></button>
+        </div>
+      </li>
+    </ul>
+    </div>
+    </section>
+    
+    <section class = 'contato-sect'>
+      <div class = "wrap-contato">
+        <div class = 'container-contato'>
+          <div style = "width:40%">
+            <p>Se interessou pelas belezas do nosso estado?</p>
+            <h2>BORA COM A GENTE!</h2>
+            <p>Vem marocar o lugar mais lindo do Brasil! <br>Deixa teu email e vamo resenhar!</p>
+            <br>
+            <br>
+            <br>
+            <h3>QUER MAIS?</h3>
+            <p>Acesse nosso site de fotos!</p>
+            <br>
+            <a href = 'galeria.html'><button type = 'button' class = 'butao-submit'>Acessar</button></a>
+          </div>
+          <form>
+            <input class = 'text 'type = 'text' name = 'email' placeholder="Seu email">
+            <textarea rows="8" cols="80" placeholder="Digite sua mensagem aqui..."></textarea>
+            <input type = 'submit' class = 'butao-submit'>
+          </form>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <script src="script.js"></script>
+      <div class="container-footer">
+        <span
+          ><a href="https://github.com/igorl4d"><i class="bi bi-github"></i></a
+        alt = 'Ícone do Github'></span>
+        <span
+          ><a href="https://www.instagram.com/igorl.pereira?r=nametag"
+            ><i class="bi bi-instagram" alt = 'Ícone do Instagram'></i></a
+        ></span>
+        <span
+          ><a href="https://www.linkedin.com/in/igor-lima-pereira-577872186/"
+            ><i class="bi bi-linkedin" alt = 'Ícone do Linkedin'></i></a
+        ></span>
+      </div>
+      <p>Desenvolvido por Igor Lima Pereira</p>
+    </footer>
+  </html>
+  
+</body>
